@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>🔐 CyberGuard Academy - Full Cybersecurity Course Demo</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap');
+    body { font-family: 'Inter', sans-serif; }
+    .title-font { font-family: 'Space Grotesk', sans-serif; }
+    .cyber-bg { background: linear-gradient(135deg, #0a0a0a 0%, #1a1a2e 100%); }
+    .card-hover { transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1); }
+    .card-hover:hover { transform: translateY(-8px) scale(1.02); box-shadow: 0 20px 25px -5px rgb(0 0 0 / 0.1); }
+    .terminal { font-family: monospace; background: #000; color: #0f0; }
+    .threat-card { transition: all 0.4s; }
+  </style>
+</head>
+<body class="cyber-bg text-white min-h-screen">
+
+  <!-- Navbar -->
+  <nav class="bg-black/80 backdrop-blur-md border-b border-cyan-500/30 fixed w-full z-50">
+    <div class="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
+      <div class="flex items-center gap-3">
+        <div class="w-10 h-10 bg-gradient-to-br from-cyan-400 to-purple-600 rounded-xl flex items-center justify-center text-2xl">🔐</div>
+        <div>
+          <h1 class="title-font text-2xl font-bold tracking-tight">CyberGuard Academy</h1>
+          <p class="text-xs text-cyan-400 -mt-1">BCA Cybersecurity - Unit I & II</p>
+        </div>
+      </div>
+      <div class="flex gap-6 text-sm overflow-x-auto">
+        <a href="#unit1" class="hover:text-cyan-400">Unit I: Intro & Concepts</a>
+        <a href="#unit2" class="hover:text-cyan-400">Unit II: System & Device Security</a>
+        <a href="#demos" class="hover:text-cyan-400">Live Demos</a>
+      </div>
+      <a href="https://tryhackme.com" target="_blank" class="bg-cyan-500 hover:bg-cyan-600 text-black px-5 py-2 rounded-xl font-semibold text-sm">Go to Real Labs →</a>
+    </div>
+  </nav>
+
+  <!-- Hero -->
+  <section class="pt-32 pb-20 px-6 text-center">
+    <div class="max-w-4xl mx-auto">
+      <div class="inline-flex items-center gap-2 bg-white/10 px-6 py-2 rounded-full mb-6">
+        <span class="relative flex h-3 w-3"><span class="animate-ping absolute h-full w-full rounded-full bg-green-400 opacity-75"></span><span class="relative h-3 w-3 bg-green-500 rounded-full"></span></span>
+        <span class="text-sm">Safe • Educational • Legal Only</span>
+      </div>
+      <h1 class="title-font text-6xl font-bold mb-6">Introduction to Cybersecurity<br>for BCA Students</h1>
+      <p class="text-xl text-gray-300">Interactive lessons covering Unit I & II + safe live demos. Never attack real systems.</p>
+    </div>
+  </section>
+
+  <!-- Unit I -->
+  <section id="unit1" class="max-w-7xl mx-auto px-6 py-20">
+    <h2 class="title-font text-5xl font-bold text-center mb-4">Unit I: Introduction to Cyber Security</h2>
+    <p class="text-center text-gray-400 mb-16">Importance, Threats, CIA Triad, Terminology & Safe Practices</p>
+
+    <!-- Importance & Threats -->
+    <div class="grid md:grid-cols-2 gap-12 mb-20">
+      <div>
+        <h3 class="text-3xl font-semibold mb-6">Why Cyber Safety Matters</h3>
+        <p class="text-gray-300 leading-relaxed">In our digital world, almost everything — banking, education, healthcare, and communication — happens online. A single breach can lead to financial loss, identity theft, or even national security risks.</p>
+      </div>
+      <div class="bg-white/5 border border-white/10 rounded-3xl p-8">
+        <h4 class="font-semibold mb-6 text-orange-400">Common Cyber Threats</h4>
+        <div class="grid grid-cols-2 gap-4 text-sm">
+          <div class="threat-card bg-black/50 p-4 rounded-2xl"><i class="fas fa-virus text-red-400"></i> Viruses & Worms</div>
+          <div class="threat-card bg-black/50 p-4 rounded-2xl"><i class="fas fa-horse text-red-400"></i> Trojans</div>
+          <div class="threat-card bg-black/50 p-4 rounded-2xl"><i class="fas fa-fish text-red-400"></i> Phishing</div>
+          <div class="threat-card bg-black/50 p-4 rounded-2xl"><i class="fas fa-lock text-red-400"></i> Ransomware</div>
+          <div class="threat-card bg-black/50 p-4 rounded-2xl"><i class="fas fa-globe text-red-400"></i> Fake Websites</div>
+          <div class="threat-card bg-black/50 p-4 rounded-2xl"><i class="fas fa-users text-red-400"></i> Social Engineering</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Real-life Examples -->
+    <div class="mb-20">
+      <h3 class="text-3xl font-semibold mb-8 text-center">Real-Life Cyber Attacks (2025 Examples)</h3>
+      <div class="grid md:grid-cols-3 gap-8">
+        <div class="bg-white/5 border border-red-500/30 rounded-3xl p-8">
+          <p class="font-medium text-red-400">Marks & Spencer Ransomware (April 2025)</p>
+          <p class="text-sm text-gray-400 mt-4">Social engineering on third-party contractors → ransomware disrupted online orders for weeks. Estimated loss: £300 million.</p>
+        </div>
+        <div class="bg-white/5 border border-red-500/30 rounded-3xl p-8">
+          <p class="font-medium text-red-400">University Phishing Breaches</p>
+          <p class="text-sm text-gray-400 mt-4">Harvard, Penn, Princeton hit via phone/email phishing → personal data of alumni and students stolen.</p>
+        </div>
+        <div class="bg-white/5 border border-red-500/30 rounded-3xl p-8">
+          <p class="font-medium text-red-400">Supply Chain Ransomware</p>
+          <p class="text-sm text-gray-400 mt-4">Attacks on distributors like UNFI and Ingram Micro disrupted food & IT supply chains.</p>
+        </div>
+      </div>
+      <p class="text-center text-xs text-gray-500 mt-8">Lesson: Most attacks start with human error (phishing/social engineering).</p>
+    </div>
+
+    <!-- CIA Triad -->
+    <div class="mb-20">
+      <h3 class="text-3xl font-semibold mb-10 text-center">Goals of Cybersecurity: The CIA Triad</h3>
+      <div class="grid md:grid-cols-3 gap-8">
+        <div onclick="highlightCIA(this)" class="cia-card bg-gradient-to-br from-blue-900/50 to-transparent border border-blue-400 rounded-3xl p-8 cursor-pointer">
+          <i class="fas fa-lock text-4xl mb-6 text-blue-400"></i>
+          <h4 class="text-xl font-semibold">Confidentiality</h4>
+          <p class="text-sm text-gray-400 mt-3">Keeping data private. Only authorized people can access it.</p>
+          <p class="text-xs mt-6 text-blue-300">Example: Your bank account details</p>
+        </div>
+        <div onclick="highlightCIA(this)" class="cia-card bg-gradient-to-br from-emerald-900/50 to-transparent border border-emerald-400 rounded-3xl p-8 cursor-pointer">
+          <i class="fas fa-shield-alt text-4xl mb-6 text-emerald-400"></i>
+          <h4 class="text-xl font-semibold">Integrity</h4>
+          <p class="text-sm text-gray-400 mt-3">Data remains accurate and unaltered.</p>
+          <p class="text-xs mt-6 text-emerald-300">Example: Exam marks not changed by hacker</p>
+        </div>
+        <div onclick="highlightCIA(this)" class="cia-card bg-gradient-to-br from-purple-900/50 to-transparent border border-purple-400 rounded-3xl p-8 cursor-pointer">
+          <i class="fas fa-clock text-4xl mb-6 text-purple-400"></i>
+          <h4 class="text-xl font-semibold">Availability</h4>
+          <p class="text-sm text-gray-400 mt-3">Data and systems available when needed.</p>
+          <p class="text-xs mt-6 text-purple-300">Example: Website not downed by DDoS</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Threats vs Vulnerability vs Risk -->
+    <div class="bg-white/5 border border-white/10 rounded-3xl p-10 mb-20">
+      <h3 class="text-3xl font-semibold mb-8">Threat vs Vulnerability vs Risk</h3>
+      <div class="grid md:grid-cols-3 gap-8">
+        <div class="p-6 bg-black/50 rounded-2xl">
+          <span class="text-red-400 font-bold">Threat</span>
+          <p class="text-sm mt-3">A potential danger (e.g., a hacker, virus, or ransomware attacker).</p>
+        </div>
+        <div class="p-6 bg-black/50 rounded-2xl">
+          <span class="text-orange-400 font-bold">Vulnerability</span>
+          <p class="text-sm mt-3">A weakness (e.g., weak password, unpatched software, or open port).</p>
+        </div>
+        <div class="p-6 bg-black/50 rounded-2xl">
+          <span class="text-yellow-400 font-bold">Risk</span>
+          <p class="text-sm mt-3">The likelihood + impact when a threat exploits a vulnerability.<br><span class="text-xs">Risk = Threat × Vulnerability</span></p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Terminology -->
+    <div class="grid md:grid-cols-4 gap-6 mb-20">
+      <div class="text-center p-6 border border-cyan-500/30 rounded-3xl"><i class="fas fa-fire text-4xl text-cyan-400 mb-4"></i><p class="font-medium">Firewall</p><p class="text-xs text-gray-400">Blocks unauthorized network traffic</p></div>
+      <div class="text-center p-6 border border-cyan-500/30 rounded-3xl"><i class="fas fa-shield-virus text-4xl text-cyan-400 mb-4"></i><p class="font-medium">Antivirus</p><p class="text-xs text-gray-400">Detects and removes malware</p></div>
+      <div class="text-center p-6 border border-cyan-500/30 rounded-3xl"><i class="fas fa-bug text-4xl text-cyan-400 mb-4"></i><p class="font-medium">Malware</p><p class="text-xs text-gray-400">Malicious software (virus, trojan, etc.)</p></div>
+      <div class="text-center p-6 border border-cyan-500/30 rounded-3xl"><i class="fas fa-user-secret text-4xl text-cyan-400 mb-4"></i><p class="font-medium">Hacking</p><p class="text-xs text-gray-400">Unauthorized access (ethical vs malicious)</p></div>
+    </div>
+
+    <!-- Cryptography Intro -->
+    <div class="bg-white/5 border border-white/10 rounded-3xl p-10">
+      <h3 class="text-3xl font-semibold mb-8">Introduction to Cryptography</h3>
+      <div class="grid md:grid-cols-2 gap-12">
+        <div>
+          <p class="font-medium">Symmetric Encryption</p>
+          <p class="text-sm text-gray-400">Same key for encrypt & decrypt (fast but key sharing is risky). Example: AES</p>
+        </div>
+        <div>
+          <p class="font-medium">Asymmetric Encryption</p>
+          <p class="text-sm text-gray-400">Public key to encrypt, private key to decrypt. Example: RSA, used in HTTPS</p>
+        </div>
+      </div>
+      <div class="mt-10 flex gap-6">
+        <button onclick="simulate2FA()" class="flex-1 bg-purple-600 hover:bg-purple-500 py-5 rounded-2xl font-semibold">Try 2FA Simulation</button>
+        <button onclick="checkHTTPS()" class="flex-1 border border-purple-400 text-purple-400 hover:bg-purple-400/10 py-5 rounded-2xl font-semibold">Check Fake vs Real HTTPS</button>
+      </div>
+      <div id="crypto-result" class="mt-8 text-sm min-h-[50px]"></div>
+    </div>
+  </section>
+
+  <!-- Unit II -->
+  <section id="unit2" class="max-w-7xl mx-auto px-6 py-20 bg-black/40">
+    <h2 class="title-font text-5xl font-bold text-center mb-4">Unit II: System, Personal & Device Security</h2>
+
+    <!-- Password Strength Checker -->
+    <div class="max-w-md mx-auto bg-white/5 border border-white/10 rounded-3xl p-10 mb-16">
+      <h3 class="text-2xl font-semibold mb-6">Password Strength Checker</h3>
+      <input id="password-input" type="password" placeholder="Enter a password" class="w-full bg-black border border-gray-700 rounded-2xl px-6 py-5 focus:outline-none focus:border-cyan-400">
+      <button onclick="checkPassword()" class="mt-6 w-full bg-cyan-600 hover:bg-cyan-500 py-4 rounded-2xl font-semibold">Check Strength</button>
+      <div id="password-result" class="mt-6 text-center"></div>
+    </div>
+
+    <!-- Safe Practices & Fake Site Detector -->
+    <div class="grid md:grid-cols-2 gap-12">
+      <div>
+        <h3 class="text-2xl font-semibold mb-6">Safe Internet Practices</h3>
+        <ul class="space-y-6 text-sm">
+          <li class="flex gap-4"><span class="text-green-400 text-xl">✓</span> Verify URL before clicking (look for https:// and padlock)</li>
+          <li class="flex gap-4"><span class="text-green-400 text-xl">✓</span> Avoid public Wi-Fi for banking; use VPN</li>
+          <li class="flex gap-4"><span class="text-green-400 text-xl">✓</span> Don't open suspicious email attachments</li>
+          <li class="flex gap-4"><span class="text-green-400 text-xl">✓</span> Keep software updated (patch management)</li>
+        </ul>
+      </div>
+      <div class="bg-white/5 border border-white/10 rounded-3xl p-8">
+        <h4 class="font-medium mb-6">Fake Website Detector (Demo)</h4>
+        <input id="url-input" type="text" value="https://yourbank-login.com" class="w-full bg-black border border-gray-700 rounded-2xl px-6 py-5">
+        <button onclick="detectFakeSite()" class="mt-6 w-full bg-orange-600 hover:bg-orange-500 py-4 rounded-2xl">Check if Safe</button>
+        <div id="url-result" class="mt-8 text-sm"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Live Demos Section -->
+  <section id="demos" class="max-w-7xl mx-auto px-6 py-20">
+    <h2 class="title-font text-5xl font-bold text-center mb-16">Live Safe Demos</h2>
+    
+    <!-- Previous sections retained + new ones -->
+    <div class="grid md:grid-cols-2 gap-10">
+      <!-- Phishing Demo (from before) -->
+      <div class="bg-white/10 border border-red-500/30 rounded-3xl p-10">
+        <h3 class="text-xl font-semibold mb-6 text-red-400">Phishing Simulation</h3>
+        <button onclick="simulatePhishing()" class="w-full bg-red-600 hover:bg-red-500 py-6 rounded-2xl text-lg">Click Here to "Verify Account"</button>
+        <div id="phish-result" class="mt-10 hidden text-red-400">⚠️ This is how phishing tricks users! Always check sender and URL.</div>
+      </div>
+
+      <!-- SQL Injection Demo -->
+      <div class="bg-white/5 border border-white/10 rounded-3xl p-8">
+        <h3 class="text-xl font-semibold mb-4 text-orange-400">SQL Injection Demo</h3>
+        <input id="sql-user" placeholder="Username (try: admin' OR '1'='1)" class="w-full bg-black border border-gray-700 rounded-xl px-5 py-4 mb-4">
+        <button onclick="demoSQLInjection()" class="w-full bg-orange-600 py-4 rounded-2xl">Login</button>
+        <div id="sql-result" class="mt-6"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-black py-16 text-center text-xs text-gray-500 border-t border-white/10">
+    <p>Educational demo only • All attacks shown are simulated and safe</p>
+    <p class="mt-4">Recommended Platforms: TryHackMe • PortSwigger Web Academy • Cisco NetAcad • GoPhish (for awareness only)</p>
+    <p class="mt-8">Teach responsibly. Stay ethical.</p>
+  </footer>
+
+  <script>
+    // Tailwind already loaded
+
+    function highlightCIA(el) {
+      document.querySelectorAll('.cia-card').forEach(c => c.style.opacity = 0.6);
+      el.style.opacity = 1;
+    }
+
+    function simulate2FA() {
+      const code = Math.floor(100000 + Math.random() * 900000);
+      document.getElementById('crypto-result').innerHTML = `2FA Code generated: <span class="font-mono text-green-400">${code}</span><br><span class="text-xs">Enter this in the next step (simulated).</span>`;
+    }
+
+    function checkHTTPS() {
+      document.getElementById('crypto-result').innerHTML = `✅ Real sites use <span class="text-green-400">HTTPS + SSL/TLS</span> for encryption.<br>Fake sites often use HTTP or suspicious certificates.`;
+    }
+
+    function checkPassword() {
+      const pass = document.getElementById('password-input').value;
+      let strength = "Weak";
+      let color = "text-red-400";
+      if (pass.length > 12 && /[A-Z]/.test(pass) && /[0-9]/.test(pass) && /[^A-Za-z0-9]/.test(pass)) {
+        strength = "Strong";
+        color = "text-green-400";
+      } else if (pass.length > 8) {
+        strength = "Medium";
+        color = "text-yellow-400";
+      }
+      document.getElementById('password-result').innerHTML = `Strength: <span class="${color} font-semibold">${strength}</span><br>Use long, unique passwords with 2FA.`;
+    }
+
+    function detectFakeSite() {
+      const url = document.getElementById('url-input').value.toLowerCase();
+      const result = document.getElementById('url-result');
+      if (url.includes('bank') && (url.includes('login') || url.includes('.com'))) {
+        result.innerHTML = `⚠️ <span class="text-red-400">Suspicious!</span> This looks like a possible fake banking site.<br>Always check the official domain.`;
+      } else {
+        result.innerHTML = `✅ Looks safer, but always verify the full URL and padlock icon.`;
+      }
+    }
+
+    function simulatePhishing() {
+      document.getElementById('phish-result').classList.remove('hidden');
+    }
+
+    function demoSQLInjection() {
+      const user = document.getElementById('sql-user').value;
+      const res = document.getElementById('sql-result');
+      if (user.toLowerCase().includes("' or")) {
+        res.innerHTML = `<span class="text-green-400">Login successful as ADMIN (SQL Injection succeeded!)</span><br>Use prepared statements to prevent this.`;
+      } else {
+        res.innerHTML = `Access denied (normal behavior).`;
+      }
+    }
+
+    console.log('%cCyberGuard Full Demo loaded successfully! Use for classroom teaching only.', 'color:#22d3ee');
+  </script>
+</body>
+</html>
